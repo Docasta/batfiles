@@ -20,7 +20,7 @@ if /I "%cmd%"=="Ws" (
         start "" "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\devenv.exe"
     ) else (
         if /I "%cmd%"=="cmdvs" (
-            start "" %comspec% /k ""C:\Program Files\Microsoft Visual Studio\18\Community\Common7\Tools\VsDevCmd.bat""
+            start "" ""C:\Program Files\Microsoft Visual Studio\18\Community\Common7\Tools\VsDevCmd.bat""
         ) else (
             if /I "%cmd%"=="listcm" (
                 echo Vs      : to start Visual Studio
